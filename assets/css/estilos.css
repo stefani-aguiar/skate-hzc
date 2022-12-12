@@ -30,5 +30,8 @@ body {
 
 .cabecaçho__logo {
     width: 40px;
+}
 
+.menu-lateral {
+    display: flex;
 }
