@@ -1,58 +1,148 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HZC | Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/estilos.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+  <title>HCZ|Home</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <button class="cabecalho__menu" aria-label="menu">
-            <i></i>
+  <header class="header">
+    <button class="menu" active id="menu-toggle">
+      <img src="./assets/img/menu.svg" alt="" />
+      <nav class="menu--mobile">
+        <ul>
+          <li>
+            <img src="./assets/img/casinha.svg" alt="casinha" />
+            <p>Início</p>
+          </li>
+
+          <li>
+            <img src="./assets/img/videos.svg" alt="videos" />
+            <p>Vídeos</p>
+          </li>
+          <li>
+            <img src="./assets/img/localizaçao.svg" alt="picos" />
+            <p>Picos</p>
+          </li>
+          <li>
+            <img src="./assets/img/integrantes.svg" alt="integrantes" />
+            <p>Integrantes</p>
+          </li>
+          <li>
+            <img src="./assets/img/roupas.svg" alt="camisas" />
+            <p>Camisas</p>
+          </li>
+          <li>
+            <img src="./assets/img/pinturas.svg" alt="pinturas" />
+            <p>Pinturas</p>
+          </li>
+        </ul>
+      </nav>
+    </button>
+
+    <div class="logotipo">
+      <img src="./assets/img/logo.svg" alt="logo" />
+    </div>
+
+    <div class="notificaçao">
+      <button class="sininho-notificaçao">
+        <img src="./assets/img/alert.svg" alt="notificaçao" />
+      </button>
+    </div>
+  </header>
+
+  <main class="home">
+    <h2>Início</h2>
+
+    <div class="card card-highlight">
+      <img src="./assets/img/banner-mobile_1.png" alt="" class="card-img" />
+
+      <div class="informacao-card">
+        <span class="tag">Vídeo em destaque</span>
+        <h3 class="title">HZC - Life is... / 2021</h3>
+        <span class="name">Bruno Lopes</span>
+
+        <div class="status">
+          <div class="time">
+            <img src="./assets/img/minutos.svg" alt="" />
+            <span>33 minutos</span>
+          </div>
+
+          <div class="view">
+            <img src="./assets/img/visualizaçao.svg" alt="" />
+            <span>53 visualizações</span>
+          </div>
+        </div>
+
+        <button class="watch-now">
+          <img src="./assets/img/play.svg" alt="" />
+          <span>Assistir agora</span>
         </button>
+      </div>
+    </div>
 
-        <img src="assets/img/logo.svg" alt="logotipó da HZC" class="cabecalho__logo">
+    <p class="visualizacoes-videos">Vídeos mais vistos</p>
 
-        <button class="cabecalho__notificacao" aria-label="notificação">
-            <i></i>
-        </button>
-    </header>
+    <div class="card card-highlight">
+      <img src="./assets/img/video_1.png" alt="" class="card-img" />
 
-    <nav class="menu-lateral">
-        <img src="assets/img/logo.svg" alt="logotipo da HZC" class="menu-lateral__logo">
-        <a href="" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Início</a>
-        <a href="" class="menu-lateral__link menu-lateral__link--videos">Vídeos</a>
-        <a href="" class="menu-lateral__link menu-lateral__link--picos">Picos</a>
-        <a href="" class="menu-lateral__link menu-lateral__link--integrantes">Integrantes</a>
-        <a href="" class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
-        <a href="" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
-    </nav>
+      <div class="informacao-card">
+        <span class="tag">André Soares</span>
+        <h3 class="title">HZC - Tudo sem Padrin</h3>
 
-    <main class="principal">
-        <h2 class="titulo-pagina"></h2>
-        <article class="cartao">
-            <img src="./assets/img/banner-mobile_1.png" alt="Banner do cartao" class="cartao_imagem">
-            <div class="cartao__conteudo">
-                <p class="cartao__destaque">Vídeo em destaque</p>
-                <h3 class="cartao__destaque">HZC - Título</h3>
-                <p class="cartao__perfil">Bruno Lopez</p>
-                <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                <p class="cartao__info cartao__info--visualizacao">33 Visualizaçãoes</p>
-                <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
+
+        <div class="custom-status-watch-now">
+          <div class="status">
+            <div class="time">
+              <img src="./assets/img/minutos.svg" alt="" />
+              <span>33 minutos</span>
             </div>
-        </article>
-    </main>
+          </div>
 
-    <script src="index.js"></script>
+          <button class="watch-now">
+            <img src="./assets/img/play.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
 
+
+
+
+    <!-- <section class="pagina-hu-flez">
+      <div class="banner-pagina-hu-flez">
+        <img src="./assets/img/video_2.png" alt="" srcset="">
+        <h3>Bruno Lopes</h3>
+        <span>HZC Enter The Hu-Flez</span>
+      </div>
+
+      <div class="container-time-hu-flez">
+        <div class="time-hu-flez">
+          <img src="./assets/img/minutos.svg" alt="">
+          <span>33 minutos</span>
+        </div>
+
+        <button class="play-video-hu-flez">
+          <img src="./assets/img/play.svg" alt="">
+        </button>
+
+      </div>
+
+    </section> --> 
+
+
+  </main>
+
+
+  <script src="./index.js"></script>
 </body>
 
 </html>

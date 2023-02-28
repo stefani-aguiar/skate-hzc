@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15191c;
+
+    padding: 16px;
+}
+
+.header button {
+    background-color: transparent;
+    border: none;
+}
+
+.header .menu .menu--mobile {
+    position: absolute;
+    top: 80px;
+    left: -50%;
+    background-color: var(--primaria);
+    width: 50%;
+    height: 100%;
+    transition: left 0.5s ease-in-out;
+    background-color: #15191c;
+}
+
+header .menu.active .menu--mobile {
+    left: 0;
+}
+
+.header .menu--mobile li {
+    display: flex;
+    align-items: center;
+}
+
+.header .menu--mobile li img {
+    padding: 8px 20px;
+}
+
+header .menu .menu--mobile ul {
+    display: block;
+    text-align: left;
+}
+
+header .menu .menu--mobile ul li {
+    padding: 10px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+}
+
+.logo-menu {
+    color: #fff;
+}
+
+.logotipo img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.imagens-logo img {
+    display: block;
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    padding: 11px 0px;
+}

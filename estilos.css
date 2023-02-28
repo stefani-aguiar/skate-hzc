@@ -1,0 +1,25 @@
+/* global */
+@import url("./styles/reset.css");
+
+/* layout */
+@import url("./styles/header.css");
+
+/* pages*/
+@import url("./styles/home.css");
+
+/* components */
+@import url("./styles/card.css");
+
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #1d232a;
+}
+
+
+
+
+
+
+
